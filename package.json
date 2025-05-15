@@ -2,11 +2,18 @@
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^18.18.0 || ^19.8.0 || >=20.0.0",
+    "npm": ">=9.0.0",
+    "pnpm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d out",
+    "export": "next export"
   },
   "dependencies": {
     "next": "15.3.2",
@@ -26,4 +33,3 @@
     "typescript": "^5"
   }
 }
-
