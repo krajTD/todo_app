@@ -12,34 +12,41 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// export const metadata: Metadata = {
+//   title: "Todo App",
+//   description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
+//   icons: {
+//     icon: "/favicon.ico",
+//   },
+//   openGraph: {
+//     title: "Todo App",
+//     description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
+//     url: "https://your-app-url.com",
+//     siteName: "TaskMaster",
+//     images: [
+//       {
+//         url: "/og-image.png", // Path to your OpenGraph image
+//         width: 1200,
+//         height: 630,
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "TaskMaster | Next.js Todo App",
+//     description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
+//     images: ["/og-image.png"], // Path to your Twitter card image
+//   },
+// };
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://krajtdtodoexampleapp.com'), // Add this line
   title: "Todo App",
-  description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
-  icons: {
-    icon: "/favicon.ico",
-  },
-  openGraph: {
-    title: "Todo App",
-    description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
-    url: "https://your-app-url.com",
-    siteName: "TaskMaster",
-    images: [
-      {
-        url: "/og-image.png", // Path to your OpenGraph image
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "TaskMaster | Next.js Todo App",
-    description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
-    images: ["/og-image.png"], // Path to your Twitter card image
-  },
-};
+  description: "A sleek, modern todo application...",
+  // ... rest of your existing metadata
+}
 
 export default function RootLayout({
   children,

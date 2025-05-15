@@ -1,21 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Required for static export (GitHub Pages)
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
   output: 'export',
-  
-  // Optional: Add if deploying to repository subfolder
-  // basePath: '/todo-app',
-  
-  // Optional: Add images config if using Next.js Image optimization
+  basePath: '', // Keep empty if using root domain, or '/repo-name' if GitHub Pages subpath
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true
   },
-  
-  // Optional: Enable React Strict Mode
-  reactStrictMode: true,
-  
-  // Optional: Add trailingSlash for better GitHub Pages compatibility
   trailingSlash: true,
+  reactStrictMode: true,
 }
 
 export default nextConfig
