@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://krajtd.github.io/todo_app'),
   title: "Todo App",
   description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
   icons: {
@@ -21,11 +22,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Todo App",
     description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
-    url: "https://your-app-url.com",
-    siteName: "TaskMaster",
+    url: "https://krajtd.github.io/todo_app",
+    siteName: "Todo App",
     images: [
       {
-        url: "/og-image.png", // Path to your OpenGraph image
+        url: "/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -35,18 +36,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TaskMaster | Next.js Todo App",
+    title: "Todo App | Next.js",
     description: "A sleek, modern todo application built with Next.js, TypeScript, and Tailwind CSS",
-    images: ["/og-image.png"], // Path to your Twitter card image
+    images: ["/og-image.png"],
   },
 };
-
-// export const metadata: Metadata = {
-//   metadataBase: new URL('https://krajtdtodoexampleapp.com'), // Add this line
-//   title: "Todo App",
-//   description: "A sleek, modern todo application...",
-//   // ... rest of your existing metadata
-// }
 
 export default function RootLayout({
   children,
